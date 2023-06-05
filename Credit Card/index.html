@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CARD DETAILS</title>
+</head>
+<body>
+    <main>
+        <div class="section-1">
+<div class="front">
+    <img src="card-logo.svg" alt="">
+     
+    <h3 value= ""class="cNum">0000 0000 0000 0000</h3>
+     <div class="nameX">
+    <p class="name" value="">Jane Appleseed</p>
+    <p class="expiry" >  00/00</p>
+     </div>
+</div>
+<div class="back">
+  <p class = "backt">  000 </p></div>
+        </div>
+        <div class="section-2">
+<form action="">
+ <h5> Cardholder Name</h5>
+ <input  required type="text" value="" name= "name" class="input" id="name" placeholder="
+  e.g. Jane Appleseed" >
+
+ <h5> Card Number </h5>
+ <input  title="Pls follow the required pattern for credit cards"  required type="text" class="input" value = ""id="cNum" placeholder="
+  e.g. 1234 5678 9123 0000">
+
+<div class="digits"> 
+    <div class="content"><h5>     Exp. Date (MM/YY) </h5> <div class="sm"> 
+        <input required type="text" class="inputsm" id="digq" placeholder= " MM" >
+   
+      <input required type="text" value="" class="inputsm" id="digs" placeholder= " YY" >
+    </div>
+    </div>
+ <div class="contents">  <h5> CVC </h5>
+ <input required type="text" value="" class="inputsl" id="cvv" placeholder="  e.g. 123">
+</div>
+</div>
+<button id="btn">  Confirm </button>
+</form>
+
+  <!-- Completed state start -->
+<div class="complete" style="display: none;">  
+    <img src="images/icon-complete.svg" alt="check"> 
+    <h3>  Thank you! </h3>
+ <p>We've added your card details </p>
+ <button id="btn-x"> Continue </button>
+        </div>
+    </main>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
