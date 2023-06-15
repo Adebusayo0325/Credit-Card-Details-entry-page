@@ -41,7 +41,7 @@ for(i =  0; i < splitted.length ; i++)
 
 
 nfame.addEventListener("input", () => {
-  if (nfame.value === "") {
+  if (nfame.value === "" && (typeof nfame.value!== 'string')) {
     cname.innerText = "Jane Appleseed";
     console.log("Enter your name");
   } else {
@@ -56,7 +56,7 @@ nfame.addEventListener("input", () => {
 
 cnum.addEventListener("input", () => {
   if (cnum.value === "") {
-    cnnum.innerText = "0000 0000 0000 0000";
+    cnnum.innerText = "0000 0000 0000 0000"
     console.log("Enter your card no");
     cnum.style.border = "solid 2px hsl(279, 6%, 55%)";
   }
